@@ -1,0 +1,285 @@
+:root
+{
+    --logo1: YellowGreen;
+    --logo2: #10221b;
+    --hover1: yellow;
+    --dropbtn1: #fff;
+    --dropbtn2: #10221b;
+    --marquee: #10221b;
+    --marquee1: #fff;
+    --headerabajoPrincipal: #fff;
+    --dropdown-content1: #fff;
+    --dropdown-content2: #10221b;
+    --dropdown-content-a1: #10221b;
+    --dropdown-content-a2: #fff;
+    --tituloPrincipal0: yellowgreen;
+    --subtituloscentrales: #10221b;
+    --copy0: gold;
+    --scrollbar-track0: #fff;
+    --scrollbar-thumb0: #10221b;
+    --btnAll-0: #10221b;
+    --btnAll-01: #fff;
+    --btnAll-hover0: #10221b;
+    --borderAll0: 0.2rem solid #10221b;
+    --mainPrincipal:  #fff;
+    --main2: #eee;
+    --light-bg: #f1f1f1;
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    /* max-width: 100%; */
+}
+html
+{
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+html::-webkit-scrollbar
+{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track
+{
+    background: var(--scrollbar-track0);
+}
+html::-webkit-scrollbar-thumb
+{
+    background: var(--scrollbar-thumb0);
+}
+body
+{
+    font-family: 'PT Sans', sans-serif;
+}
+marquee .DosLg
+{
+    color: var(--marquee);
+    font-size: 10px;
+    font-weight: 600;
+}
+.Dos
+{
+    color: var(--logo2);
+    font-size: 1.7rem;
+    margin-left: 1.7rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.Dos i
+{
+    color: var(--logo1);
+}
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #112d42;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #03a9f4;
+}
+section .Container
+{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    margin-bottom: 3rem;
+}
+section .Container .contactinfo
+{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #0f3959;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0,0,0, 0.2)
+
+}
+section .Container .contactinfo h2
+{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .Container .contactinfo .info
+{
+    position: relative;
+    margin: 20px 0;
+}
+section .Container .contactinfo .info li
+{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+section .Container .contactinfo .info li span:nth-child(1)
+{
+    width: 30px;
+    min-width: 30px;
+}
+section .Container .contactinfo .info li span:nth-child(1) img
+{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+section .Container .contactinfo .info li span:nth-child(2)
+{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+section .Container .contactinfo .info li:hover span:nth-child(1) img,
+section .Container .contactinfo .info li:hover span:nth-child(2)
+{
+    opacity: 1;
+}
+section .Container .contactinfo .sci
+{
+    position: relative;
+    display: flex;
+}
+section .Container .contactinfo .sci li
+{
+    
+    list-style: none;
+    margin-right: 15px;
+}
+section .Container .contactinfo .sci li a
+{
+    text-decoration: none;
+}
+section .Container .contactinfo .sci li a img
+{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+section .Container .contactinfo .sci li:hover a img
+{
+    opacity: 1;
+}
+section .Container .contactform
+{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0,0,0, 0.5);
+}
+section .Container .contactform h2
+{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .Container .contactform .formbox
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+section .Container .contactform .formbox .inputbox
+{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+section .Container .contactform .formbox .inputbox.w50
+{
+    width: 47%;
+}
+section .Container .contactform .formbox .inputbox.w100
+{
+    width: 100%;
+}
+section .Container .contactform .formbox .inputbox input,
+section .Container .contactform .formbox .inputbox textarea
+{
+    width: 100% !important;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+section .Container .contactform .formbox .inputbox textarea
+{
+    min-height: 120px;
+}
+section .Container .contactform .formbox .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
+}
+section .Container .contactform .formbox .inputbox input:focus ~ span,
+section .Container .contactform .formbox .inputbox textarea:focus ~ span,
+section .Container .contactform .formbox .inputbox input:valid ~ span,
+section .Container .contactform .formbox .inputbox textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+section .Container .contactform .formbox .inputbox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+section .Container .contactform .formbox .inputbox input[type="submit"]:hover
+{
+    background: #ff568c;
+}
